@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <h1>
+    Simple Calculator
+  </h1>
+  
+  <input type="number" id="firstNum" placeholder = "First Number" class="form-control" #num1>
+  <input type="number" id="secondNum" placeholder = "Second Number" class="form-control" #num2>
+  <br>
+  <button class="btn btn-success" (click)="addition(num1.value, num2.value)">ADD</button>
+  <button class="btn btn-danger" (click)="subtraction(num1.value, num2.value)">SUB</button>
+  <button class="btn btn-primary" (click)="multiplication(num1.value, num2.value)">MUL</button>
+  <button class="btn btn-warning" (click)="division(num1.value, num2.value)">DIV</button>
+  
+  <br><br>
+  <h4>The result is {{result}}</h4>  
+
+</div>
+
+<router-outlet></router-outlet>
